@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "echo \"This is an example build script\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

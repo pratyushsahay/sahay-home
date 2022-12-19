@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "firebase deploy",
+    "build": "firebase deploy --token '1//0dkFwApQuGZlBCgYIARAAGA0SNwF-L9Ir6MGgkpS0N0D8d9shWDrvEYjbgaR6kzksGKj9vMdGHy69Na6IA5_GC7BlegjQ89sZURY'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

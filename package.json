@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "local:build:firebase": "firebase deploy --token $FIREBASE_TOKEN",
     "build:react": "react-scripts build",
-    "build:firebase": "firebase deploy --token '1//0dkFwApQuGZlBCgYIARAAGA0SNwF-L9Ir6MGgkpS0N0D8d9shWDrvEYjbgaR6kzksGKj9vMdGHy69Na6IA5_GC7BlegjQ89sZURY'",
+    "build:firebase": "firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}",
     "build": "run-s build:*",
     "test:react": "react-scripts test",
     "test:firebase": "echo \"Error: no test specified\" && exit 0",

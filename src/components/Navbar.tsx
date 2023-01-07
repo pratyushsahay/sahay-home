@@ -19,6 +19,7 @@ function Navbar() {
     }
 
     window.addEventListener('resize', showButton);
+    window.addEventListener('DOMContentLoaded', showButton);
 
     return (
         <>

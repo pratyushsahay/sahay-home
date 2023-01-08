@@ -6,7 +6,7 @@ import '../App.css'
 function MainPage() {
     return (
         <div className='main-container'>
-            <video src='/video-2.mp4' autoPlay loop muted/>
+            <video src='/video-2.mp4' autoPlay loop muted playsInline />
              <h1>MAIN PAGE</h1>
              <p>SOME TEXT</p>
 

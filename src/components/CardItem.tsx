@@ -28,4 +28,24 @@ class CardItem extends React.Component<CardItemProps & React.HTMLAttributes<HTML
     }
 }
 
+export class CardItemRoute extends React.Component<CardItemProps & React.HTMLAttributes<HTMLDivElement>, {}> {
+    render(): React.ReactNode {
+        return (
+            <>
+                <li className="cards__item">
+                    <a href={this.props.path} className="cards__item__link">
+                        <figure className="cards__item__pic-wrap" datatype={this.props.label}>
+                            <img className="cards__item__img" src={this.props.src} alt="Adventure"></img>
+                        </figure>
+                        <div className="cards__item__info">
+                            <h5 className="cards__item__text"> {this.props.text} </h5>
+    
+                        </div>
+                    </a>
+                </li>
+            </>
+        )
+    }
+}
+
 export default CardItem;

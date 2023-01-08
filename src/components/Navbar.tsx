@@ -40,8 +40,8 @@ function Navbar() {
 
                             </li>
                             <li className="nav-item">
-                                <Link to="/reddit-scraper" className="nav-links" onClick={closeMobileMenu}>
-                                    Reddit Scraper
+                                <Link to="/projects" className="nav-links" onClick={closeMobileMenu}>
+                                    Projects
                                 </Link>
 
                             </li>

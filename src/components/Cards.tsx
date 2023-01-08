@@ -10,19 +10,19 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem 
-                            src="img-9.jpg"
+                            src="machine-learning.png"
                             text="Continuous Delivery for Machine Learning"
                             label="Machine Learning"
                             path="https://martinfowler.com/articles/cd4ml.html"
                         />
                         <CardItem 
-                            src="img-9.jpg"
+                            src="distributed.jpg"
                             text="Message-Oriented Middleware"
                             label="Distributed Computing"
                             path="https://docs.oracle.com/cd/E19340-01/820-6424/aeraq/index.html"
                         />
                         <CardItem 
-                            src="img-9.jpg"
+                            src="twitter.jpg"
                             text="One Machine Twitter"
                             label="System Design"
                             path="https://thume.ca/2023/01/02/one-machine-twitter/"

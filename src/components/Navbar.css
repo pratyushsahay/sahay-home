@@ -63,6 +63,12 @@
     transition: all 0.2s ease-out;
   }
   
+  .fa-bars {
+    color: #fff;
+    margin-right: 15px;
+    margin-top: 6px;
+  }
+
   .fa-house-signal {
     color: #fff;
     margin-right: 15px;

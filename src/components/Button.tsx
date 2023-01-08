@@ -10,7 +10,7 @@ interface ButtonProps {
     readonly buttonSize?: any;
 }
 
-class RouterButton extends React.Component<ButtonProps & React.HTMLAttributes<HTMLDivElement>, {}> {
+class Button extends React.Component<ButtonProps & React.HTMLAttributes<HTMLDivElement>, {}> {
 
     render(): React.ReactNode {
         const STYLES = ['btn--primary', 'btn--outline'];
@@ -35,4 +35,4 @@ class RouterButton extends React.Component<ButtonProps & React.HTMLAttributes<HT
 
 }
 
-export default RouterButton;
+export default Button;

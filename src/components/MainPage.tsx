@@ -15,7 +15,7 @@ function MainPage() {
                     className='btns'
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'>
-                        Get Started
+                        About Me
                 </Button>
                 <Button
                     className='btns'

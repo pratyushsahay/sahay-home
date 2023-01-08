@@ -3,11 +3,12 @@ import './Button.css';
 import { Link } from 'react-router-dom';
 
 interface ButtonProps {
-    readonly children?: any,
-    readonly type?: any,
-    readonly onClick?: any,
-    readonly buttonStyle?: any,
-    readonly buttonSize?: any
+    readonly children?: any;
+    readonly type?: any;
+    readonly onClick?: any;
+    readonly buttonStyle?: any;
+    readonly buttonSize?: any;
+    readonly className?: string;
 }
 
 const STYLES = ['btn--primary', 'btn--outline'];

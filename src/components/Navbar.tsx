@@ -26,7 +26,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                         <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                            <i className="fa-solid fa-house-signal"></i> sahay-home
+                            sahay-home <i className="fab fa-typo3"></i>
                         </Link>
 
                         <div className="menu-icon" onClick={handleClick}>

@@ -8,25 +8,31 @@ interface ButtonProps {
     readonly onClick?: any;
     readonly buttonStyle?: any;
     readonly buttonSize?: any;
-    readonly className?: string;
 }
 
-const STYLES = ['btn--primary', 'btn--outline'];
-const SIZES = ['btn--medium', 'btn--large'];
+class RouterButton extends React.Component<ButtonProps & React.HTMLAttributes<HTMLDivElement>, {}> {
 
-export function Button(props: ButtonProps) {
-    const checkButtonStyle = STYLES.includes(props.buttonStyle) ? props.buttonStyle : STYLES[0];
-    const checkButtonSize = SIZES.includes(props.buttonSize) ? props.buttonSize : SIZES[0];
-    
-    return (
-        <Link to='/sign-up' className="btn-mobile">
-            <button 
-                className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
-                onClick={props.onClick} 
-                type={props.type}
-            >
-                {props.children}
-            </button>
-        </Link>
-    )
+    render(): React.ReactNode {
+        const STYLES = ['btn--primary', 'btn--outline'];
+        const SIZES = ['btn--medium', 'btn--large'];
+
+        const checkButtonStyle = STYLES.includes(this.props.buttonStyle) ? this.props.buttonStyle : STYLES[0];
+        const checkButtonSize = SIZES.includes(this.props.buttonSize) ? this.props.buttonSize : SIZES[0];
+
+        return (
+            <Link to='/login' className={this.props.className}>
+                <button 
+                    className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
+                    onClick={this.props.onClick} 
+                    type={this.props.type}
+                >
+                    {this.props.children}
+                </button>
+            </Link>
+        )
+        
+    }
+
 }
+
+export default RouterButton;

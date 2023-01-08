@@ -1,11 +1,11 @@
 import React, { useState} from "react";
 import { Link } from 'react-router-dom';
-import { Button } from "./Button";
+import Button from "./Button";
 import './Navbar.css';
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(false);
+    const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -26,7 +26,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                         <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                            sahay-home <i className='fab fa-typo3' />
+                            <i className="fa-solid fa-house-signal"></i> sahay-home
                         </Link>
 
                         <div className="menu-icon" onClick={handleClick}>
@@ -40,25 +40,19 @@ function Navbar() {
 
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                                <Link to="/reddit-scraper" className="nav-links" onClick={closeMobileMenu}>
                                     Reddit Scraper
                                 </Link>
 
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                                    Home
-                                </Link>
-
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/" className="nav-links-mobile" onClick={closeMobileMenu}>
-                                    Home
+                                <Link to="/blog" className="nav-links" onClick={closeMobileMenu}>
+                                    Blog
                                 </Link>
 
                             </li>
                         </ul>
-                        {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
+                        {button && <Button className='btn-mobile'  buttonStyle='btn--outline'>LOGIN</Button>}
                 </div>
             </nav>
         </>

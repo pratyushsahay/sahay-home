@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 import './MainPage.css'
 import '../App.css'
+import ButtonRoute from './ButtonRoute';
 
 function MainPage() {
     return (
@@ -11,16 +12,18 @@ function MainPage() {
              <p>i am a software engineer</p>
 
              <div className='main-btns'>
-                <Button
+                <ButtonRoute
                     className='btns'
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'>
                         About Me
-                </Button>
+                </ButtonRoute>
                 <Button
-                    className='btns'
+                    className='btns--external'
                     buttonStyle='btn--primary'
-                    buttonSize='btn--large'>
+                    buttonSize='btn--large'
+                    onClick='https://github.com/pratyushsahay/'
+                    type='button'>
                         GITHUB <i className="fa-brands fa-github"></i>
                 </Button>
              </div>

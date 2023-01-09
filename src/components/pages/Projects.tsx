@@ -15,18 +15,21 @@ export default function Projects() {
                             text="reddit-scraper"
                             label="Python"
                             path="/projects/reddit-scraper"
+                            link="https://github.com/pratyushsahay/sahay-home"
                         />
                         <CardItemRoute 
                             src="/home.jpg"
                             text="sahay-home OS"
                             label="Rust"
                             path="/projects/sahay-home-os"
+                            link=""
                         />
                         <CardItemRoute 
                             src="/firebase_react.png"
                             text="sahay-home React App"
                             label="React"
                             path="/projects/sahay-home"
+                            link=""
                         />
                     </ul>
                 </div>

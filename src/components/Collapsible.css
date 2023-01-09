@@ -1,0 +1,10 @@
+.collapse--container {
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse--button {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+}

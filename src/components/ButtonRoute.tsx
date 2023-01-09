@@ -1,5 +1,6 @@
 import React from "react";
 import './Button.css';
+import { Link } from 'react-router-dom';
 
 interface ButtonProps {
     readonly children?: any;
@@ -9,7 +10,7 @@ interface ButtonProps {
     readonly buttonSize?: any;
 }
 
-export class Button extends React.Component<ButtonProps & React.HTMLAttributes<HTMLDivElement>, {}> {
+class ButtonRoute extends React.Component<ButtonProps & React.HTMLAttributes<HTMLDivElement>, {}> {
 
     render(): React.ReactNode {
         const STYLES = ['btn--primary', 'btn--outline'];
@@ -19,13 +20,15 @@ export class Button extends React.Component<ButtonProps & React.HTMLAttributes<H
         const checkButtonSize = SIZES.includes(this.props.buttonSize) ? this.props.buttonSize : SIZES[0];
 
         return (
-            <a className={this.props.className} href={this.props.onClick} target='_blank' rel="noreferrer">
-                <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}>
+            <Link to='/login' className={this.props.className}>
+                <button 
+                    className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                >
                     {this.props.children}
                 </button>
-            </a>
+            </Link>
         )   
     }
 }
 
-export default Button;
+export default ButtonRoute;

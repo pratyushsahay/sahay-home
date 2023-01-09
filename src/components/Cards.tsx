@@ -14,18 +14,21 @@ function Cards() {
                             text="Continuous Delivery for Machine Learning"
                             label="Machine Learning"
                             path="https://martinfowler.com/articles/cd4ml.html"
+                            link=""
                         />
                         <CardItem 
                             src="distributed.jpg"
                             text="Message-Oriented Middleware"
                             label="Distributed Computing"
                             path="https://docs.oracle.com/cd/E19340-01/820-6424/aeraq/index.html"
+                            link=""
                         />
                         <CardItem 
                             src="twitter.jpg"
                             text="One Machine Twitter"
                             label="System Design"
                             path="https://thume.ca/2023/01/02/one-machine-twitter/"
+                            link=""
                         />
                     </ul>
                 </div>

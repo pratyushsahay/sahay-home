@@ -38,6 +38,11 @@ video {
     margin: 6px;
 }
 
+.main-btns .btns--external {
+    margin: 6px;
+    display: inline;
+}
+
 .fa-github {
     margin-left: 6px;
 }

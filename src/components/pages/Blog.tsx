@@ -15,12 +15,14 @@ export default function Blog() {
                             text="Hosting a Website With Firebase"
                             label="Firebase"
                             path="/blog/firebase"
+                            link=""
                         />
                         <CardItemRoute 
                             src="/typescript_react.jpg"
                             text="Building A React App With Typescript"
                             label="Typescript"
                             path="/blog/react-typescript"
+                            link=""
                         />
                     </ul>
                 </div>
